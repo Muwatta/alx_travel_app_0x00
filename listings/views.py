@@ -1,7 +1,10 @@
-from rest_framework import generics
-from .models import Destination
-from .serializers import DestinationSerializer
+# listings/views.py
+from .models import Listing
 
-class DestinationListCreateView(generics.ListCreateAPIView):
-    queryset = Destination.objects.all()
-    serializer_class = DestinationSerializer
+# Example for a ListCreateView
+from rest_framework import generics
+from .serializers import ListingSerializer
+
+class ListingListCreateView(generics.ListCreateAPIView):
+    queryset = Listing.objects.all()
+    serializer_class = ListingSerializer
