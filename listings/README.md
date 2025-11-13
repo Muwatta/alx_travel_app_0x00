@@ -1,4 +1,4 @@
-# Messaging App
+# ALX Travel App
 
-This project is a Django REST Framework app for messaging. 
-It contains custom User, Conversation, and Message models with API endpoints.
+This Django project is part of the ALX backend program.  
+It includes database modeling, API serialization, and data seeding for travel listings.

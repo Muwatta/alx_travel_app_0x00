@@ -1,12 +1,14 @@
 from django.core.management.base import BaseCommand
-from listings.models import Listing
+from listings.models import Destination
 
 class Command(BaseCommand):
-    help = 'Seed the database with initial listings'
+    help = "Seeds initial data into the database"
 
     def handle(self, *args, **kwargs):
-        Listing.objects.all().delete()
-        Listing.objects.create(title="Paris Trip", description="Visit the Eiffel Tower")
-        Listing.objects.create(title="New York Tour", description="Explore Times Square")
-        Listing.objects.create(title="Tokyo Adventure", description="Experience Shibuya Crossing")
-        self.stdout.write(self.style.SUCCESS('Database seeded successfully!'))
+        Destination.objects.create(
+            name="Lagos Island",
+            description="A vibrant cultural hub with beaches and nightlife.",
+            price=150,
+            available=True,
+        )
+        self.stdout.write(self.style.SUCCESS("✅ Data seeded successfully"))
