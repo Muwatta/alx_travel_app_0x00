@@ -92,7 +92,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'alx_travel_db',
         'USER': 'alx_user',
-        'PASSWORD': 'StrongPassword123!',
+        'PASSWORD': 'Generator10*#',
         'HOST': 'localhost',
         'PORT': '3306',
     }
